@@ -11,7 +11,7 @@ $(function() {
         $('.reg-box').hide()
     })
 
-    // 从 layui 中获取 form 对象
+    // 从 layui 中获取 form 和layer对象
     var form = layui.form
     var layer = layui.layer
         // 通过 form.verify() 函数自定义校验规则

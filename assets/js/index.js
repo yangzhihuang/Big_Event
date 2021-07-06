@@ -31,7 +31,7 @@ function getUserInfo() {
                 return layui.layer.msg('获取用户信息失败！')
             }
             // 调用renderAvatar()渲染用户的头像
-            renderAdavatar(res.data);
+            renderAvatar(res.data);
         },
 
         // 控制访问权限，不登录的话怎么也跳转不了index.html。不论成功还是失败，最终都会调用complete回调函数
@@ -51,9 +51,9 @@ function getUserInfo() {
 }
 
 // 渲染用户的头像
-function renderAdavatar(user) {
+function renderAvatar(user) {
     // 1.获得用户名
-    var name = user.nickrname || user.username //nickname为用户类型{管理员、普通用户}
+    var name = user.nickname || user.username //nickname为用户类型{管理员、普通用户}
     console.log(name[0])
     console.log(typeof name)
         // 2.设置侧边栏欢迎用户--字
@@ -71,6 +71,4 @@ function renderAdavatar(user) {
 
 
     }
-
-
 }
