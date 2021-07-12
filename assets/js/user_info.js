@@ -6,7 +6,7 @@ $(function() {
     form.verify({
         nickname: function(value, item) { //value：表单的值、item：表单的DOM对象
             if (value.length > 6 || value.length == 0) {
-                return '昵称长度长度必须在1~6个';
+                return '昵称长度必须在1~6个';
             }
         }
     })

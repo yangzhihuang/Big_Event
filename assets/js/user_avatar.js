@@ -1,5 +1,5 @@
 $(function() {
-    // 从 layui 中获取 form和layer 对象
+    // 从 layui 中获取 layer 对象
     var layer = layui.layer
 
     // 1.1 获取裁剪区域的 DOM 元素

@@ -44,9 +44,9 @@
             </ul>
         </div>
 
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
-                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree" lay-filter="test" lay-shrink="all">
                     <div class="userinfo">
                         <img src="" class="layui-nav-img">
@@ -59,9 +59,9 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;"><span class="iconfont icon-16"></span>文章管理</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><span class="iconfont icon-16" target="fm"></span>文章类别</a></dd>
-                            <dd><a href="javascript:;"><span class="iconfont icon-16" target="fm"></span>文章列表</a></dd>
-                            <dd><a href="javascript:;"><span class="iconfont icon-16" target="fm"></span>发表文章</a></dd>
+                            <dd><a href="article/article_cate.html" target="fm"><span class="iconfont icon-16" target="fm"></span>文章类别</a></dd>
+                            <dd><a href="article/article_list.html" target="fm"><span class="iconfont icon-16" target="fm"></span>文章列表</a></dd>
+                            <dd><a href="article/article_pub.html" target="fm"><span class="iconfont icon-16" target="fm"></span>发表文章</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
@@ -93,10 +93,11 @@
     <script src="assets/lib/layui/layui.all.js"></script>
     <!-- 导入jQuery的js文件 -->
     <script src="assets/lib/jquery.js"></script>
-    <!-- 导入自己的js文件 -->
-    <script src="assets/js/index.js"></script>
     <!-- 导入自己封装的baseAPI -->
     <script src="assets/js/baseAPI.js"></script>
+    <!-- 导入自己的js文件 -->
+    <script src="assets/js/index.js"></script>
+
 </body>
 
 </html>
